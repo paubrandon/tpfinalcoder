@@ -57,8 +57,7 @@ a {
       color: #C23ECA !important; }
   .navbar-default .navbar-toggle {
     border: none;
-    background-color: #C23ECA;
-    color: #C23ECA; }
+    background-color: #C23ECA; }
     .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:focus {
       background-color: #C23ECA !important; }
   .navbar-default .navbar-nav > li > a {
@@ -74,12 +73,20 @@ a {
 /************************************ */
 /*=========     BANNER     ========= */
 /********************************** */
+#banner {
+  max-width: 1800px;
+  margin: auto;
+  padding-top: 50px; }
+
+#carousel img {
+  width: 100%;
+  min-height: 250px; }
 #carousel h1 {
-  font: 700 50px/50px "New Rocker";
+  font: 700 20px/20px "New Rocker";
   text-transform: uppercase;
   margin-bottom: 10px; }
 #carousel h2 {
-  font: 400 italic 22px/22px "New Rocker";
+  font: 400 italic 16px/19px "New Rocker";
   margin-bottom: 25px; }
 
 /************************************** */
@@ -342,9 +349,18 @@ footer {
 /*=========     MEDIA-QUERIES    ========= */
 /***************************************** */
 @media (min-width: 768px) {
-  #carousel {
+  #banner {
+    width: 100%; }
+
+  #carousel img {
     width: 100%;
     height: 50%; }
+  #carousel h1 {
+    font: 700 50px/50px "New Rocker";
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  #carousel h2 {
+    font: 400 italic 20px/22px "New Rocker"; }
 
   .time-line::before {
     left: 50%; }
